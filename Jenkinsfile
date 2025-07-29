@@ -1,7 +1,7 @@
 // Jenkinsfile
 
 pipeline {
-    agent AgentRobot // You can specify a label here, e.g., agent { label 'linux-node' }
+    agent { label 'AgentRobot' } // You can specify a label here, e.g., agent { label 'linux-node' }
               // if you have specific Jenkins agents for your test execution.
 
     environment {
