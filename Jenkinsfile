@@ -1,15 +1,15 @@
 // Jenkinsfile
 
 pipeline {
-    agent any // You can specify a label here, e.g., agent { label 'linux-node' }
+    agent AgentRobot // You can specify a label here, e.g., agent { label 'linux-node' }
               // if you have specific Jenkins agents for your test execution.
 
     environment {
         // Define environment variables if needed
         // For headless Chrome, usually a display variable is needed
         DISPLAY = ':99'
-        # Optional: Path to browser driver if not using webdriver_manager
-        # CHROMEDRIVER_PATH = 'C:\\Users\\Ganesh\\Downloads\\chromedriver-win64\\chromedriver-win64'
+        //Optional: Path to browser driver if not using webdriver_manager
+        CHROMEDRIVER_PATH = 'C:\\Users\\Ganesh\\Downloads\\chromedriver-win64\\chromedriver-win64'
     }
 
     stages {
