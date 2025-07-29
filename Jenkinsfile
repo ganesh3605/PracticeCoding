@@ -57,7 +57,7 @@ pipeline {
         always {
             echo "Publishing Robot Framework results..."
             // Publish Robot Framework results using the Jenkins Robot Framework Plugin
-            robot outputPath: 'output/', # Path to your output.xml
+            robot outputPath: 'output/', //Path to your output.xml
                   outputFileName: 'output.xml',
                   reportFileName: 'report.html',
                   logFileName: 'log.html',
